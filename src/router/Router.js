@@ -1,5 +1,5 @@
 import React from 'react';
-import Login from '../components/Login'
+import Login from '../features/login/Login'
 import Home from '../components/Home'
 import Search from '../components/Search';
 import BookDetails from '../components/BookDetails';
@@ -16,7 +16,7 @@ import {
 export default function Routing() {
     return (
         <Router> 
-            <div className="link">
+            <div>
                 <Switch>
                     <Route path="/login" component={Login} />
                     <Route path="/home" component={Home} />
