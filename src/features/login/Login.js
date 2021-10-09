@@ -21,10 +21,7 @@ const Login = () => {
             <h3> How can we call you? </h3>
             <input placeholder="Username" type="text" value={usernameState} onChange={e => setUsernameState(e.target.value)} /> <br/> <br/> 
             <input placeholder="Password" type="password" value={passwordState} onChange={e => setPasswordState(e.target.value)} /> <br/> <br/> 
-            <button 
-                className="button" 
-                aria-label="Login" 
-                onClick={submitLogin}> Login </button>
+            <button className="button" aria-label="Login" onClick={submitLogin}> Login </button>
         </div>
     );
 };

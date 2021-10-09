@@ -1,11 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
+import { getVolumes } from './searchSlice'
 
-const SearchBar = ({ searchQuery, setSearchQuery }) => {
+const SearchBar = () => {
     const history = useHistory();
-    const onSubmit = e => {
-        history.push(`/search?s=${searchQuery}`)
-        e.preventDefault()
+    const dispatch = useDispatch();
+    const { search } = window.location;
+    const query = new URLSearchParams(search).get('s');
+    const [searchQuery, setSearchQuery] = useState(query || '');
+
+    function onSubmit(e) {
+        e.preventDefault();
+        history.push(`/search?s=${searchQuery}`);
+        dispatch(getVolumes(searchQuery));
     };
 
     return (
