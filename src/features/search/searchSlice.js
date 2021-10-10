@@ -41,6 +41,5 @@ export const { volumesLoaded } = slice.actions;
 
 // Search result selectors
 export const selectAllVolumes = state => state.search.volumes;
-export const selectVolumeByID = (state, volumeId) => state.search.volumes.find(v => v.id === volumeId);
   
 export default slice.reducer;

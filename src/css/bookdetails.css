@@ -1,0 +1,178 @@
+.header
+{
+    position: relative;
+    width: 376px;
+    height: 282px;
+    left: -1px;
+    top: 0px;
+
+    background: #FFF6E5;
+    border-radius: 0px 0px 100px 0px;
+}
+
+.back 
+{
+    position: absolute;
+    background-color: transparent;
+    border: 0px;
+    width: 14px;
+    height: 14px;
+    left: 32px;
+    top: 55px;
+}
+
+.volume-cover
+{
+    position: absolute;
+    width: 151px;
+    height: 234px;
+    left: 113px;
+    top: 84px;
+}
+
+.corner-fingerprint
+{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: 0px;
+    top: 0px;
+}
+
+.blue-circle 
+{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 248px;
+    top: 86px;
+}
+
+.red-dot
+{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 46px;
+    top: 125px;
+}
+
+.blue-dot
+{
+    position: absolute;
+    width: 63px;
+    height: 63px;
+    left: 73px;
+    top: 115px;
+}
+
+.round-fingerprint
+{
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    left: 242.39px;
+    top: 218.11px;
+    transform: rotate(25deg);
+}
+
+.volume-title
+{
+    position: absolute;
+    display: inline-block;
+    word-break: break-word;
+    width: 335px;
+    height: 58px;
+    left: 20px;
+    top: 349px;
+}
+
+.title-text
+{
+    font-family: SFProDisplay;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 1.5px;
+
+    color: #36383A;
+}
+
+.subtitle-text
+{
+    font-family: SFProDisplay;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 1.5px;
+
+    color: #36383A;
+}
+
+.author-text
+{
+    position: absolute;
+    width: 57px;
+    height: 19px;
+    left: 20px;
+    top: 414px;
+
+    font-family: SFProDisplay;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+    letter-spacing: 0.670588px;
+
+    color: #FF6978;
+}
+
+.description
+{
+    position: absolute;
+    width: 335px;
+    height: 275px;
+    left: 20px;
+    top: 443px;
+
+    font-family: SFProText;
+    font-size: 14px;
+    line-height: 25px;
+    /* or 179% */
+
+    letter-spacing: 0.2px;
+
+    color: rgba(49, 49, 49, 0.6);
+}
+
+.bottom-app-bar
+{
+    position: fixed;
+    width: 335px;
+    height: 56px;
+    left: 20px;
+    top: 703px;
+
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    vertical-align: middle;
+    align-items: center;
+    justify-items: center;
+
+    background: #FFFFFF;
+    box-shadow: 3px 3px 23px rgba(107, 103, 70, 0.125901);
+    border-radius: 2px;
+    z-index: 9999;
+
+    font-family: SFProDisplay;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    letter-spacing: 1px;
+}

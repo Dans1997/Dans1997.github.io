@@ -3,7 +3,6 @@ import Login from '../features/login/Login'
 import Home from '../components/Home'
 import Search from '../features/search/Search';
 import BookDetails from '../components/BookDetails';
-
 import '../css/router.css'
 
 import {
@@ -21,7 +20,7 @@ export default function Routing() {
                     <Route path="/login" component={Login} />
                     <Route path="/home" component={Home} />
                     <Route path="/search" component={Search} /> 
-                    <Route path="/details" component={BookDetails} />
+                    <Route path="/details/:volumeId" component={BookDetails} />
 
                     <Redirect from='/' to='/login' />
                     <Redirect from='/login' to='/home' />
