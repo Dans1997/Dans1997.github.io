@@ -1,0 +1,36 @@
+.discover-text
+{
+    position: absolute;
+    display: inline-block;
+    width: 200px;
+    height: 21px;
+    left: 19px;
+    top: 187px;
+
+    font-family: SFProDisplay;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+
+    letter-spacing: 0.5px;
+
+    color: #3F4043;
+}
+
+.link-right
+{
+    position: absolute;
+    width: 35px;
+    height: 17px;
+    left: 320px;
+    top: 190px;
+
+    font-family: SFProText;
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height */
+
+    text-align: right;
+
+    color: #4ABDF1;
+}

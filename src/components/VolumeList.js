@@ -5,7 +5,21 @@ import ClipLoader from 'react-spinners/ClipLoader';
 import { selectAllVolumes, getVolumes } from '../features/search/searchSlice';
 import '../css/volumelist.css';
 
-const VolumeList = () => {
+
+const volume = (book) =>
+{
+    const history = useHistory();
+    const volumeCover = require('../../public/volume_cover.png');
+    return (
+        <button className='volume-button' key={book.id} onClick={(e) => history.push(`/details/${book.id}`)}>
+            <img className='cover' src={volumeCover} alt='?'/>
+            <span className='title'>{book.volumeInfo.title}</span> <br />
+            <span className='author'>by {book.volumeInfo.authors || '-'}</span>
+        </button>
+    );
+}
+
+export default () => {
     const dispatch = useDispatch();
     const books = useSelector(selectAllVolumes);
     const status = useSelector(state => state.search.status);
@@ -25,19 +39,3 @@ const VolumeList = () => {
         </div>
     );
 }
-
-const volume = (book) =>
-{
-    const history = useHistory();
-    const volumeCover = require('../../public/volume_cover.png');
-
-    return (
-        <button className='volume-button' key={book.id} onClick={(e) => history.push(`/details/${book.id}`)}>
-            <img className='cover' src={volumeCover} />
-            <span className='title'>{book.volumeInfo.title}</span> <br />
-            <span className='author'>by {book.volumeInfo.authors || '-'}</span>
-        </button>
-    );
-}
-
-export default VolumeList;

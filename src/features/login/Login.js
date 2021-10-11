@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useHistory } from "react-router-dom";
-import { login, selectUsername, selectPassword } from './loginSlice'
+import { login, selectUsername, selectPassword } from './loginSlice';
 
-const Login = () => {
+export default () => {
     const history = useHistory();
     const dispatch = useDispatch();
     const [usernameState, setUsernameState] = useState(useSelector(selectUsername));
@@ -25,5 +25,3 @@ const Login = () => {
         </div>
     );
 };
-
-export default Login;

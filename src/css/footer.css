@@ -1,0 +1,22 @@
+footer
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    vertical-align: middle;
+    align-items: center;
+    justify-items: center;
+
+    position: fixed;
+    width: 375px;
+    height: 59px;
+    left: 0px;
+    top: 749px;
+
+    background: #FFFFFF;
+
+    font-family: SFProDisplay;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+}

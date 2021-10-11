@@ -33,7 +33,7 @@ const SearchBar = ({searchOnInput}) => {
     return (
         <div>
             <form action="/" method="get" autoComplete="off" onSubmit={onSubmit}>
-                <img className='search-icon' src={searchIcon} />
+                <img className='search-icon' src={searchIcon} alt=''/>
                 <input
                     className='rectangle'
                     value={searchQuery}

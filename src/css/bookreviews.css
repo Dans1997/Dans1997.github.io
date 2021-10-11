@@ -1,0 +1,35 @@
+.review-text
+{
+    position: absolute;
+    width: 171px;
+    height: 21px;
+    left: 20px;
+    top: 588px;
+
+    font-family: SFProDisplay;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+
+    letter-spacing: 0.5px;
+
+    color: #3F4043;
+}
+
+.reviews-link
+{
+    position: absolute;
+    width: 66px;
+    height: 17px;
+    left: 295px;
+    top: 591px;
+
+    font-family: SFProText;
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height */
+
+    text-align: right;
+
+    color: #4ABDF1;
+}

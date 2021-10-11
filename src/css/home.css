@@ -1,0 +1,22 @@
+.user-text
+{
+    position: absolute;
+    width: 210px;
+    height: 29px;
+    left: 19px;
+    top: 128px;
+
+    font-family: SFProDisplay;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+
+    color: #54565A;
+}
+
+.red-text
+{
+    color: #FF6978;
+}

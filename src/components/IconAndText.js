@@ -1,20 +1,8 @@
 import React from 'react';
+import '../css/iconandtext.css';
 
-const IconAndText = ({ text }) => {
-    const image = require('../../public/book-open.png');
-
-    return (
-        <div style={style}>
-            <img src={image}/> <span> {text} </span> 
-        </div> 
-    );
-}
-
-const style = {
-    'display': 'grid',
-    'grid-template-columns': '1fr 1fr',
-    'vertical-align': 'middle',
-    'justify-items': 'center'
-};
-
-export default IconAndText;
+export default ({ text, src }) => (
+    <div className='parent'>
+        <img src={src} alt='?'/> <span> {text} </span> 
+    </div> 
+)

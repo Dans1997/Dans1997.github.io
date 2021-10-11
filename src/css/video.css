@@ -1,0 +1,63 @@
+.video-parent
+{
+    position: absolute;
+    width: 335px;
+    height: 267px;
+    left: 20px;
+    top: 624px;
+}
+
+.video-cover
+{
+    position: absolute;
+    width: 335px;
+    height: 181px;
+}
+
+.video-creator
+{
+    position: absolute;
+    height: 9px;
+    left: 3.58%;
+    right: 73.73%;
+    top: calc(50% - 9px/2 + 87px);
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 9px;
+    
+    color: rgba(106, 103, 103, 0.8);
+}
+
+.video-views
+{
+    position: absolute;
+    height: 9px;
+    left: 30.75%;
+    right: 54.03%;
+    top: calc(50% - 9px/2 + 87px);
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 9px;
+    
+    color: rgba(106, 103, 103, 0.8);    
+}
+
+.video-date
+{
+    position: absolute;
+    height: 9px;
+    left: 50.45%;
+    right: 34.63%;
+    top: calc(50% - 9px/2 + 87px);
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+}

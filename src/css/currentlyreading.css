@@ -1,0 +1,157 @@
+.text
+{
+    position: absolute;
+    width: 148px;
+    height: 21px;
+    left: 20px;
+    top: 392px;
+
+    font-family: SFProDisplay;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+
+    letter-spacing: 0.5px;
+
+    color: #3F4043;
+}
+
+.background-image
+{
+    position: absolute;
+    width: 331px;
+    height: 100px;
+    left: 0px;
+    top: 443px;
+
+    background: #EEF5DB;
+    box-shadow: 0px 3px 45px rgba(121, 141, 67, 0.115084);
+    border-radius: 0px 3px 3px 0px;
+}
+
+.currently-reading-cover
+{
+    position: absolute;
+    width: 88px;
+    height: 130px;
+    left: 20px;
+    top: 428px;
+
+    filter: drop-shadow(5px 7px 32px rgba(140, 170, 58, 0.193701));
+}
+
+.link
+{
+    position: absolute;
+    width: 18px;
+    height: 17px;
+    left: 337px;
+    top: 395px;
+    
+    font-family: SFProText;
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height */
+    
+    text-align: right;
+    
+    color: #4ABDF1;
+}
+
+.current-volume-title
+{
+    position: absolute;
+    width: 103px;
+    height: 27px;
+    left: 118px;
+    top: 453px;
+
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    /* identical to box height */
+
+    letter-spacing: 2px;
+
+    color: #2A2B26;
+}
+
+.volume-author
+{
+    position: absolute;
+    width: 106px;
+    height: 12px;
+    left: 118px;
+    top: 485px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    /* identical to box height */
+
+
+    color: #74776D;
+}
+
+.chapter-icon
+{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 118px;
+    top: 517px;
+}
+
+.chapter-text
+{
+    position: absolute;
+    width: 106px;
+    height: 12px;
+    left: 137px;
+    top: 519px;
+    
+    font-family: SFProDisplay;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    /* identical to box height */
+    
+    letter-spacing: 0.020635px;
+    
+    color: #2A2B26;
+}
+
+.red-rectangle
+{
+    position: absolute;
+    width: 46px;
+    height: 4px;
+    left: 309.17px;
+    top: 507.5px;
+
+    background: #EC6374;
+    transform: rotate(14deg);
+}
+
+.currently-reading-fingerprint
+{
+    position: absolute;
+    width: 69px;
+    height: 69px;
+    left: 295px;
+    top: 424px;
+}
+
+.currently-reading-bluecircle
+{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 223px;
+    top: 437px;
+}
