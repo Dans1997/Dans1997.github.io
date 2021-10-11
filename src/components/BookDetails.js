@@ -1,13 +1,13 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { useHistory, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { selectAllVolumes } from '../features/search/searchSlice';
 import { fetchVolumeById } from '../api/googleapi';
-import '../css/bookdetails.css';
 import IconAndText from './IconAndText';
+import '../css/bookdetails.css';
+import BackButton from './BackButton';
 
 const BookDetails = () => {
-    const history = useHistory();
     let { volumeId } = useParams();
     const volume = getVolume();
     const volumeInfo = volume.volumeInfo;
@@ -29,7 +29,7 @@ const BookDetails = () => {
     return (
         <div>
             <div className='header'>
-              <button className='back' onClick={history.goBack}> <img src={require('../../public/back.png')}/> </button>
+              <BackButton />
               <img className='corner-fingerprint' src={require('../../public/corner_fingerprint.png')}/>
               <img className='blue-circle' src={require('../../public/blue_circle.png')}/>
               <img className='red-dot' src={require('../../public/red_dot.png')}/>
@@ -51,12 +51,6 @@ const BookDetails = () => {
 
             <div className='description'> 
                 How do successful companies create products people can’t put down? <br /> <br />
-                Why do some products capture widespread attention while others flop? <br /> <br />
-                Why do some products capture widespread attention while others flop? <br /> <br />
-                Why do some products capture widespread attention while others flop? <br /> <br />
-                Why do some products capture widespread attention while others flop? <br /> <br />
-                Why do some products capture widespread attention while others flop? <br /> <br />
-                Why do some products capture widespread attention while others flop? <br /> <br />
                 Why do some products capture widespread attention while others flop? <br /> <br />
                 Why do some products capture widespread attention while others flop? <br /> <br />
                 Why do some products capture widespread attention while others flop? <br /> <br />

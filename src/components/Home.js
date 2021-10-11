@@ -12,7 +12,7 @@ import { selectUsername } from '../features/login/loginSlice';
 const Home = () => {
     return (
         <div>
-            <SearchBar />
+            <SearchBar searchOnInput={false}/>
             <div> Hi {useSelector(selectUsername) ? `, ${useSelector(selectUsername)}!` : null} :P </div> 
             <Discover />
             <CurrentlyReading />

@@ -21,9 +21,21 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #fffcf9;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.back 
+{
+    position: absolute;
+    background-color: transparent;
+    border: 0px;
+    width: 14px;
+    height: 14px;
+    left: 2%;
+    top: 2%;
 }

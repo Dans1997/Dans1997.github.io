@@ -10,17 +10,6 @@
     border-radius: 0px 0px 100px 0px;
 }
 
-.back 
-{
-    position: absolute;
-    background-color: transparent;
-    border: 0px;
-    width: 14px;
-    height: 14px;
-    left: 32px;
-    top: 55px;
-}
-
 .volume-cover
 {
     position: absolute;

@@ -3,9 +3,9 @@ import { useSelector, useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import ClipLoader from 'react-spinners/ClipLoader'; 
 import { selectAllVolumes, getVolumes } from '../features/search/searchSlice';
+import '../css/volumelist.css';
 
 const VolumeList = () => {
-    const history = useHistory();
     const dispatch = useDispatch();
     const books = useSelector(selectAllVolumes);
     const status = useSelector(state => state.search.status);
@@ -18,13 +18,25 @@ const VolumeList = () => {
 
     return (
         <div>
-            <ClipLoader loading={status === 'loading'} size={15} />
-            <ul>
-                {books && books.map((book) => (
-                    <button key={book.id} onClick={(e) => history.push(`/details/${book.id}`)}><li>{book.volumeInfo.title}</li></button>     
-                ))}
-            </ul>
+            <div className='spinner'><ClipLoader loading={status === 'loading'} size={15}/></div>
+            { status === 'succeeded' && <div className='volume-grid'>
+                {books && books.map((book) => volume(book))}
+            </div> }
         </div>
+    );
+}
+
+const volume = (book) =>
+{
+    const history = useHistory();
+    const volumeCover = require('../../public/volume_cover.png');
+
+    return (
+        <button className='volume-button' key={book.id} onClick={(e) => history.push(`/details/${book.id}`)}>
+            <img className='cover' src={volumeCover} />
+            <span className='title'>{book.volumeInfo.title}</span> <br />
+            <span className='author'>by {book.volumeInfo.authors || '-'}</span>
+        </button>
     );
 }
 
