@@ -15,7 +15,7 @@ const BackButton = () =>
     }
 
     return (
-        <button className='back' onClick={onClick}> <img src={require('../../public/back.png')} alt='Back'/> </button>
+        <button className='back' onClick={onClick}> <img src={require('../images/back.png').default} alt='Back'/> </button>
     );
 }
 

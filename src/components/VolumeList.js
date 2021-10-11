@@ -6,10 +6,10 @@ import { selectAllVolumes, getVolumes } from '../features/search/searchSlice';
 import '../css/volumelist.css';
 
 
-const volume = (book) =>
+const Volume = (book) =>
 {
     const history = useHistory();
-    const volumeCover = require('../../public/volume_cover.png');
+    const volumeCover = require('../images//volume_cover.png').default;
     return (
         <button className='volume-button' key={book.id} onClick={(e) => history.push(`/details/${book.id}`)}>
             <img className='cover' src={volumeCover} alt='?'/>
@@ -34,7 +34,7 @@ export default () => {
         <div>
             <div className='spinner'><ClipLoader loading={status === 'loading'} size={15}/></div>
             { status === 'succeeded' && <div className='volume-grid'>
-                {books && books.map((book) => volume(book))}
+                {books && books.map((book) => Volume(book))}
             </div> }
         </div>
     );

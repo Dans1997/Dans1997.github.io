@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
-import { getVolumes } from './searchSlice'
-import '../../css/searchbar.css'
+import { getVolumes } from './searchSlice';
+import '../../css/searchbar.css';
 
 const SearchBar = ({searchOnInput}) => {
     const history = useHistory();
     const dispatch = useDispatch();
     const query = new URLSearchParams(window.location).get('s');
     const [searchQuery, setSearchQuery] = useState(query || '');
-    const searchIcon = require('../../../public/search-icon.png');
+    const searchIcon = require('../../images/search-icon.png').default;
 
     function onInput(e) {
         e.preventDefault();

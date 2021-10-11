@@ -8,7 +8,7 @@ import Footer from './Footer';
 import { selectUsername } from '../features/login/loginSlice';
 import '../css/home.css';
 
-const userText = () =>
+const UserText = () =>
 {
     const username = useSelector(selectUsername);
     if (username) return <span>Hi, <span className='red-text'> {username} </span> </span>;
@@ -19,8 +19,8 @@ export default () => (
     <div>
         <SearchBar searchOnInput={false}/>
         <div className='user-text'> 
-            {userText()}
-            <img src={require('../../public/hand-emoji.png')} alt=''/>
+            {UserText()}
+            <img src={require('../images/hand-emoji.png').default} alt=''/>
         </div> 
         <Discover />
         <CurrentlyReading />

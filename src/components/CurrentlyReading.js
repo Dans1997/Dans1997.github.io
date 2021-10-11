@@ -6,14 +6,14 @@ const CurrentlyReading = () => (
         <span className='text'> Currently Reading </span>
         <span className='link'> All </span>
         <div className='background-image' />
-        <img className='currently-reading-cover' src={require('../../public/volume_cover.png')} alt=''/>
+        <img className='currently-reading-cover' src={require('../images//volume_cover.png').default} alt=''/>
         <span className='current-volume-title'> Originals </span>
         <span className='volume-author'> by Adam Grant </span>
-        <img className='chapter-icon' src={require('../../public/chapter-icon.png')} alt=''/>
+        <img className='chapter-icon' src={require('../images//chapter-icon.png').default} alt=''/>
         <span className='chapter-text'> Chapter <span className='red-text'> 2 </span> of 9 </span>
-        <img className='red-rectangle' src={require('../../public/red-rectangle.png')} alt=''/>
-        <img className='currently-reading-fingerprint' src={require('../../public/round_fingerprint.png')} alt=''/>
-        <img className='currently-reading-bluecircle' src={require('../../public/blue_circle.png')} alt=''/>
+        <img className='red-rectangle' src={require('../images//red-rectangle.png').default} alt=''/>
+        <img className='currently-reading-fingerprint' src={require('../images//round_fingerprint.png').default} alt=''/>
+        <img className='currently-reading-bluecircle' src={require('../images//blue_circle.png').default} alt=''/>
     </div>
 );
 
