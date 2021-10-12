@@ -1,42 +1,46 @@
+form
+{
+    margin-top: 5%;
+    align-self: flex-start;
+    width: 100%;
+}
+
 .rectangle
 {
-    position: absolute;
-    width: 296px;
-    height: 48px;
-    left: 19px;
-    top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+
+    width: 90%;
+    min-width: 175px;
+    min-height: 48px;
 
     background: #FDFCFC;
     box-shadow: 5px 5px 80px rgba(212, 173, 134, 0.122623);
     border-radius: 10px;
     border: 0px;
-    padding-left: 40px;
 }
 
-.input
+input
 {
-    position: absolute;
-    width: 82px;
-    height: 18px;
-    left: 66px;
-    top: 65px;
+    min-height: 18px;
+    left: 10%;
 
     font-family: SFProText;
     font-size: 16px;
     line-height: 18px;
     /* identical to box height, or 112% */
 
-    text-align: center;
+    text-align: left;
 
     color: #000000;
 }
 
 .search-icon
 {
-    position: absolute;
     width: 16px;
     height: 16px;
-    left: 34px;
-    top: 66px;
     z-index: 1;
 }

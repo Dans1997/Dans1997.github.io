@@ -1,22 +1,57 @@
-.user-text
+.flexbox
 {
-    position: absolute;
-    width: 210px;
-    height: 29px;
-    left: 19px;
-    top: 128px;
+    width: 100%;
+    display: flex;
+    align-self: flex-start;
+    justify-content: space-between;
+    margin-top: 1%;
+}
+
+.row 
+{
+    flex-direction: row;
+}
+
+.column
+{
+    flex-direction: column;
+}
+
+.home-section-title
+{
+    display: inline-block;
+    width: 100%;
+    min-width: 200px;
+
+    align-self: flex-start;
 
     font-family: SFProDisplay;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 29px;
-    /* identical to box height */
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.5px;
+    color: #3F4043;
+}
 
-    color: #54565A;
+.link-text
+{
+    width: 35px;
+    height: 17px;
+    left: 320px;
+    top: 190px;
+
+    font-family: SFProText;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: right;
+    color: #4ABDF1;
 }
 
 .red-text
 {
     color: #FF6978;
+}
+
+.wrap
+{
+    flex-wrap: wrap;
 }

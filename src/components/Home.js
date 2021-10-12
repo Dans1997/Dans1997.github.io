@@ -5,6 +5,7 @@ import Discover from './Discover';
 import CurrentlyReading from './CurrentlyReading';
 import BookReviews from './BookReviews';
 import Footer from './Footer';
+import Carousel from '../features/carousel/Carousel';
 import { selectUsername } from '../features/login/loginSlice';
 import '../css/home.css';
 
@@ -17,14 +18,17 @@ const UserText = () =>
 
 export default () => (
     <div>
-        <SearchBar searchOnInput={false}/>
-        <div className='user-text'> 
-            {UserText()}
-            <img src={require('../images/hand-emoji.png').default} alt=''/>
+        <div className='container'>
+            <SearchBar searchOnInput={false}/>
+            <div className='home-section-title'> 
+                {UserText()}
+                <img src={require('../images/hand-emoji.png').default} alt=''/>
+            </div> 
+            <Discover />
+            <Carousel />
+            <CurrentlyReading />
+            <BookReviews />
         </div> 
-        <Discover />
-        <CurrentlyReading />
-        <BookReviews />
         <Footer />
-    </div> 
+    </div>
 )

@@ -31,8 +31,8 @@ const SearchBar = ({searchOnInput}) => {
     };
 
     return (
-        <div>
-            <form action="/" method="get" autoComplete="off" onSubmit={onSubmit}>
+        <form action="/" method="get" autoComplete="off" onSubmit={onSubmit}>
+            <div className='rectangle'>
                 <img className='search-icon' src={searchIcon} alt=''/>
                 <input
                     className='rectangle'
@@ -44,8 +44,8 @@ const SearchBar = ({searchOnInput}) => {
                     placeholder="Search for a book here!"
                 >
                 </input>
-            </form>
-        </div>
+            </div>
+        </form>
     );
 };
 

@@ -1,8 +1,9 @@
 .volume-banner
 {
-    position: absolute;
-    width: 272px;
-    height: 139px;
-    left: 19px;
-    top: 223px;
+    min-width: 272px;
+    min-height: 139px;
+    max-width: 60%;
+    align-self: flex-start;
+    margin-top: 1%;
+    margin-left: 5%;
 }
