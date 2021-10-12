@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useHistory } from "react-router-dom";
 import { login, selectUsername, selectPassword } from './loginSlice';
+import '../../css/login.css';
 
 export default () => {
     const history = useHistory();
@@ -16,12 +17,18 @@ export default () => {
     }
 
     return (
-        <div>
-            <h1> Welcome! </h1>
-            <h3> How can we call you? </h3>
-            <input placeholder="Username" type="text" value={usernameState} onChange={e => setUsernameState(e.target.value)} /> <br/> <br/> 
-            <input placeholder="Password" type="password" value={passwordState} onChange={e => setPasswordState(e.target.value)} /> <br/> <br/> 
-            <button className="button" aria-label="Login" onClick={submitLogin}> Login </button>
+        <div className='container'>
+            <div className='bg'/>
+            <div> <h1> <span> Welcome! </span></h1></div>
+            <FormInput description='Username' placeholder='Username' type='text' onChange={e => setUsernameState(e.target.value)}/>
+            <FormInput description='Password' placeholder='Password' type='password' onChange={e => setPasswordState(e.target.value)}/>
+            <button className='button' aria-label='Login' onClick={submitLogin}> Login </button>
         </div>
     );
 };
+
+const FormInput = props => (
+    <div className='row'>
+        <input type={props.type} placeholder={props.placeholder} onChange={props.onChange} />
+    </div>  
+);
