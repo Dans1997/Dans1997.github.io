@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/React-GoogleBooks/static/css/main.e75f5cde.chunk.css",
-    "main.js": "/React-GoogleBooks/static/js/main.2ed5b803.chunk.js",
-    "main.js.map": "/React-GoogleBooks/static/js/main.2ed5b803.chunk.js.map",
+    "main.css": "/React-GoogleBooks/static/css/main.f5c766d2.chunk.css",
+    "main.js": "/React-GoogleBooks/static/js/main.8e714c42.chunk.js",
+    "main.js.map": "/React-GoogleBooks/static/js/main.8e714c42.chunk.js.map",
     "runtime-main.js": "/React-GoogleBooks/static/js/runtime-main.b9da1b32.js",
     "runtime-main.js.map": "/React-GoogleBooks/static/js/runtime-main.b9da1b32.js.map",
-    "static/js/2.815d1bc2.chunk.js": "/React-GoogleBooks/static/js/2.815d1bc2.chunk.js",
-    "static/js/2.815d1bc2.chunk.js.map": "/React-GoogleBooks/static/js/2.815d1bc2.chunk.js.map",
+    "static/js/2.0550a497.chunk.js": "/React-GoogleBooks/static/js/2.0550a497.chunk.js",
+    "static/js/2.0550a497.chunk.js.map": "/React-GoogleBooks/static/js/2.0550a497.chunk.js.map",
     "index.html": "/React-GoogleBooks/index.html",
-    "static/css/main.e75f5cde.chunk.css.map": "/React-GoogleBooks/static/css/main.e75f5cde.chunk.css.map",
-    "static/js/2.815d1bc2.chunk.js.LICENSE.txt": "/React-GoogleBooks/static/js/2.815d1bc2.chunk.js.LICENSE.txt",
+    "static/css/main.f5c766d2.chunk.css.map": "/React-GoogleBooks/static/css/main.f5c766d2.chunk.css.map",
+    "static/js/2.0550a497.chunk.js.LICENSE.txt": "/React-GoogleBooks/static/js/2.0550a497.chunk.js.LICENSE.txt",
     "static/media/index.css": "/React-GoogleBooks/static/media/SFPRODISPLAYREGULAR.d1f5e6e1.OTF",
     "static/media/video-cover.png": "/React-GoogleBooks/static/media/video-cover.5625ba5e.png",
     "static/media/volume-banner.png": "/React-GoogleBooks/static/media/volume-banner.6227df15.png",
@@ -17,8 +17,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.b9da1b32.js",
-    "static/js/2.815d1bc2.chunk.js",
-    "static/css/main.e75f5cde.chunk.css",
-    "static/js/main.2ed5b803.chunk.js"
+    "static/js/2.0550a497.chunk.js",
+    "static/css/main.f5c766d2.chunk.css",
+    "static/js/main.8e714c42.chunk.js"
   ]
 }
