@@ -1,8 +1,8 @@
 import React from 'react';
 import '../css/iconandtext.css';
 
-export default ({ text, src }) => (
-    <div className='parent'>
+export default ({ text, src, onClick }) => (
+    <button className='parent' onClick={onClick}>
         <img src={src} alt=''/> <span> {text} </span> 
-    </div> 
+    </button> 
 )

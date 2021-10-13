@@ -16,8 +16,9 @@ const SearchBar = ({searchOnInput}) => {
         setSearchQuery(e.target.value);
         if (searchOnInput === true)
         {
-            dispatch(getVolumes(searchQuery));
-            history.push(`/search?s=${searchQuery}`);
+            console.log(e.target.value)
+            dispatch(getVolumes(e.target.value));
+            history.push(`/search?s=${e.target.value}`);
         }
     }
 

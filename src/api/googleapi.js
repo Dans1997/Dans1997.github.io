@@ -2,9 +2,12 @@ import axios from 'axios';
 
 const searchBaseUrl = 'https://www.googleapis.com/books/v1/volumes';
 
-export const fetchVolumes = async(query) =>
+export const fetchVolumes = async(query, startIndex ) =>
 {
-    const link = `${searchBaseUrl}?q=${query || '*'}${process.env.REACT_APP_API_KEY}`;
+    console.log(query, startIndex)
+    if (query == undefined || query == '') return [];
+    const link = `${searchBaseUrl}?q=${query}&startIndex=${startIndex || 0}${process.env.REACT_APP_API_KEY}`;
+    console.log(link)
     const volumes = await axios.get(link);      
     return volumes.data.items;
 }

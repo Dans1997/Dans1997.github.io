@@ -1,15 +1,17 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import _ from 'lodash';
 import { fetchVolumes } from '../../api/googleapi';
 
 // Async Volume Fetching 
-export const getVolumes = createAsyncThunk('search/getVolumes', async (query) => {
-    return await fetchVolumes(query);
+export const getVolumes = createAsyncThunk('search/getVolumes', async (query, {getState}) => {
+    return await fetchVolumes(query, getState().search.startIndex);
 })
 
 export const slice = createSlice({
     name: 'search',
     initialState: {
         volumes: [],
+        startIndex: 0,
         status: 'idle' | 'loading' | 'succeeded' | 'failed',
         error: null
     },
@@ -17,6 +19,13 @@ export const slice = createSlice({
         volumesLoaded: {
             reducer(state, action) {
                 state.volumes.push(action.payload);
+            }
+        },
+        loadMore:
+        {
+            reducer(state, action)
+            {
+                state.startIndex += action.payload;
             }
         }
     },
@@ -27,7 +36,8 @@ export const slice = createSlice({
             })
             .addCase(getVolumes.fulfilled, (state, action) => {
                 state.status = 'succeeded';
-                state.volumes = action.payload;
+                if (action.payload.length > 0) state.volumes = _.uniq(state.volumes.concat(action.payload));
+                else state.volumes = action.payload;
             })
             .addCase(getVolumes.rejected, (state, action) => {
                 state.status = 'failed';
@@ -36,10 +46,11 @@ export const slice = createSlice({
     }
 });
 
-export const { volumesLoaded } = slice.actions;
+export const { volumesLoaded, loadMore } = slice.actions;
 
 
 // Search result selectors
 export const selectAllVolumes = state => state.search.volumes;
+export const selectStartIndex = state => state.search.startIndex;
   
 export default slice.reducer;

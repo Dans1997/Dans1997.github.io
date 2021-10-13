@@ -4,4 +4,8 @@
     grid-template-columns: 1fr 1fr;
     vertical-align: middle;
     justify-items: center;
+
+    background: none;
+    border: none;
+    z-index: 999;
 }
