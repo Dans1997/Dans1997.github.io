@@ -19,6 +19,7 @@ const Search = () => {
 
     return (
         <>
+            <div className='container'>
             <SearchBar searchOnInput={true}/>
             <VolumeList />
 
@@ -26,7 +27,7 @@ const Search = () => {
             <div className='flexbox row load-more-container'>
                 <button className='load-more-button' onClick={load}> Load More </button>
             </div>}
-
+            </div>
             <Footer />
         </>
     );

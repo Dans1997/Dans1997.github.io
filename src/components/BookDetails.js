@@ -7,6 +7,20 @@ import IconAndText from './IconAndText';
 import BackButton from './BackButton';
 import '../css/bookdetails.css';
 
+const header = (
+	<div className='header-container'>
+		<div className='header'>
+			<BackButton />
+			<img className='corner-fingerprint' src={require('../images/corner_fingerprint.png').default} alt=''/>
+			<img className='blue-circle' src={require('../images/blue_circle.png').default} alt=''/>
+			<img className='red-dot' src={require('../images/red_dot.png').default} alt=''/>
+			<img className='blue-dot' src={require('../images/blue_dot.png').default} alt=''/>
+			<img className='round-fingerprint' src={require('../images/round_fingerprint.png').default} alt=''/>
+		</div>
+		<img className='volume-cover' src={require('../images/volume_cover.png').default} alt=''/>
+	</div>
+)
+
 export default () => {
     let { volumeId } = useParams();
     const volume = GetVolume();
@@ -26,42 +40,29 @@ export default () => {
         return result;
     }
 
-    return (
-        <div>
-            <div className='header'>
-              <BackButton />
-              <img className='corner-fingerprint' src={require('../images/corner_fingerprint.png').default} alt=''/>
-              <img className='blue-circle' src={require('../images/blue_circle.png').default} alt=''/>
-              <img className='red-dot' src={require('../images/red_dot.png').default} alt=''/>
-              <img className='blue-dot' src={require('../images/blue_dot.png').default} alt=''/>
-              <img className='round-fingerprint' src={require('../images/round_fingerprint.png').default} alt=''/>
-            </div>
-            <img className='volume-cover' src={require('../images/volume_cover.png').default} alt=''/>
+	if (!volumeInfo) return header;
+	else return (
+      <>
+		{header}
+        <div className='volume-info container'>
+			<div className='volume-title'>
+				{volumeInfo && 
+					<span> 
+						{volumeInfo.title || '?'} 
+						{volumeInfo.subtitle && <span className='subtitle-text'>{`: ${volumeInfo.subtitle}`} </span>}
+					</span> 
+				}
+			</div>
 
-            <div className='volume-title'>
-              <span className='title-text'>Hooked: </span> 
-              <span className='subtitle-text'>How to Build Habit Forming Products</span>
-              {/*volumeInfo && volumeInfo.title &&*/ }
-            </div>
-
-            {volumeInfo && <div> {volumeInfo.title} {volumeInfo.subtitle && `: ${volumeInfo.subtitle}`} </div>}
-
-            <div className='author-text'> Nir Eyal </div>
-            {authors && authors.map((author) => `${author} `)}
-
-            <div className='description'> 
-                How do successful companies create products people can’t put down? <br /> <br />
-                Why do some products capture widespread attention while others flop? <br /> <br />
-                Why do some products capture widespread attention while others flop? <br /> <br />
-                Why do some products capture widespread attention while others flop? <br /> <br />
-                Why do some products capture widespread attention while others flop? <br /> <br />
-            </div>
-
-            <div className='bottom-app-bar'> 
-              <IconAndText text='Read' src={require('../images/book-open.png').default}/>
-              <IconAndText text='Listen' src={require('../images/headphones.png').default}/>
-              <IconAndText text='Share' src={require('../images/share.png').default}/>
-            </div>
+			{authors && <div className='author-text'> { authors.map((author) => `${author} `) }</div>}
+			{volume.description && <div className='description'> {volume.description} </div>}
         </div>
+
+		<div className='bottom-app-bar'> 
+			<IconAndText text='Read' src={require('../images/book-open.png').default}/>
+			<IconAndText text='Listen' src={require('../images/headphones.png').default}/>
+			<IconAndText text='Share' src={require('../images/share.png').default}/>
+		</div>
+      </>
     );
 };

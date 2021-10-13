@@ -17,7 +17,7 @@ const UserText = () =>
 }
 
 export default () => (
-    <div>
+    <>
         <div className='container'>
             <SearchBar searchOnInput={false}/>
             <div className='home-section-title'> 
@@ -30,5 +30,5 @@ export default () => (
             <BookReviews />
         </div> 
         <Footer />
-    </div>
+    </>
 )

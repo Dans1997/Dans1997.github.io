@@ -15,17 +15,20 @@ export const slice = createSlice({
         status: 'idle' | 'loading' | 'succeeded' | 'failed',
         error: null
     },
-    reducers: {
-        volumesLoaded: {
-            reducer(state, action) {
-                state.volumes.push(action.payload);
+    reducers: {   
+        resetVolumes:
+        {
+            reducer(state)
+            {
+                state.volumes = []; 
+                state.startIndex = 0; 
             }
-        },
+        },   
         loadMore:
         {
             reducer(state, action)
             {
-                state.startIndex += action.payload;
+                state.startIndex += action.payload;           
             }
         }
     },
@@ -36,7 +39,7 @@ export const slice = createSlice({
             })
             .addCase(getVolumes.fulfilled, (state, action) => {
                 state.status = 'succeeded';
-                if (action.payload.length > 0) state.volumes = _.uniq(state.volumes.concat(action.payload));
+                if (action.payload && action.payload.length > 0) state.volumes = _.uniq(state.volumes.concat(action.payload));
                 else state.volumes = action.payload;
             })
             .addCase(getVolumes.rejected, (state, action) => {
@@ -46,7 +49,7 @@ export const slice = createSlice({
     }
 });
 
-export const { volumesLoaded, loadMore } = slice.actions;
+export const { resetVolumes, loadMore } = slice.actions;
 
 
 // Search result selectors

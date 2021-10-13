@@ -29,17 +29,6 @@ code {
     monospace;
 }
 
-.back 
-{
-    position: absolute;
-    background-color: transparent;
-    border: 0px;
-    width: 14px;
-    height: 14px;
-    left: 2%;
-    top: 2%;
-}
-
 .container
 {
     display: flex;
