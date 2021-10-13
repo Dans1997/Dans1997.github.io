@@ -22,11 +22,6 @@ const SearchBar = ({searchOnInput}) => {
         return () => clearTimeout(delayDebounceFn)
     }, [searchQuery])
 
-    function onInput(e) {
-        e.preventDefault();
-        setSearchQuery(e.target.value);
-    }
-
     function onSubmit(e) {
         e.preventDefault();
         dispatch(resetVolumes());
@@ -44,7 +39,7 @@ const SearchBar = ({searchOnInput}) => {
                 <input
                     className='rectangle'
                     value={searchQuery}
-                    onInput={onInput}
+                    onInput={e => setSearchQuery(e.target.value)}
                     type="text"
                     id="header-search"
                     name="s"

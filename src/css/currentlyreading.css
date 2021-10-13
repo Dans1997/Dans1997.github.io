@@ -105,6 +105,7 @@
 
     background: #EC6374;
     transform: rotate(14deg);
+    z-index: -1;
 }
 
 .currently-reading-fingerprint
@@ -113,6 +114,7 @@
     width: 69px;
     height: 69px;
     right: 10%;
+    z-index: -1;
 }
 
 .currently-reading-bluecircle
@@ -121,6 +123,8 @@
     width: 18px;
     height: 18px;
     right: 50%;
+    margin-top: 2%;
+    z-index: -1;
 }
 
 .currently-reading-container
