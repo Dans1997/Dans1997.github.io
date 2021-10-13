@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/React-GoogleBooks/static/css/main.84d7d25b.chunk.css",
-    "main.js": "/React-GoogleBooks/static/js/main.4eabc137.chunk.js",
-    "main.js.map": "/React-GoogleBooks/static/js/main.4eabc137.chunk.js.map",
+    "main.css": "/React-GoogleBooks/static/css/main.932c8f1e.chunk.css",
+    "main.js": "/React-GoogleBooks/static/js/main.58b24e10.chunk.js",
+    "main.js.map": "/React-GoogleBooks/static/js/main.58b24e10.chunk.js.map",
     "runtime-main.js": "/React-GoogleBooks/static/js/runtime-main.b9da1b32.js",
     "runtime-main.js.map": "/React-GoogleBooks/static/js/runtime-main.b9da1b32.js.map",
     "static/css/2.ed1298f3.chunk.css": "/React-GoogleBooks/static/css/2.ed1298f3.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.b20d036a.chunk.js.map": "/React-GoogleBooks/static/js/2.b20d036a.chunk.js.map",
     "index.html": "/React-GoogleBooks/index.html",
     "static/css/2.ed1298f3.chunk.css.map": "/React-GoogleBooks/static/css/2.ed1298f3.chunk.css.map",
-    "static/css/main.84d7d25b.chunk.css.map": "/React-GoogleBooks/static/css/main.84d7d25b.chunk.css.map",
+    "static/css/main.932c8f1e.chunk.css.map": "/React-GoogleBooks/static/css/main.932c8f1e.chunk.css.map",
     "static/js/2.b20d036a.chunk.js.LICENSE.txt": "/React-GoogleBooks/static/js/2.b20d036a.chunk.js.LICENSE.txt",
     "static/media/index.css": "/React-GoogleBooks/static/media/SFPRODISPLAYREGULAR.d1f5e6e1.OTF",
     "static/media/originals-cover.png": "/React-GoogleBooks/static/media/originals-cover.2016ed4a.png",
@@ -23,7 +23,7 @@
     "static/js/runtime-main.b9da1b32.js",
     "static/css/2.ed1298f3.chunk.css",
     "static/js/2.b20d036a.chunk.js",
-    "static/css/main.84d7d25b.chunk.css",
-    "static/js/main.4eabc137.chunk.js"
+    "static/css/main.932c8f1e.chunk.css",
+    "static/js/main.58b24e10.chunk.js"
   ]
 }
